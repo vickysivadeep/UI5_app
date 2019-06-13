@@ -31,7 +31,7 @@
 					                    <Label text="App Type" id="label2"/>
 					                </header>
 					            </Column>
-					            <Column id="column0_1560426486395">
+					            <Column id="column3">
 					                <header>
 					                    <Text text="App Module" id="text3"/>
 					                </header>
