@@ -9,26 +9,26 @@ sap.ui.define([
 
 			var oTemplate = new sap.m.ColumnListItem({
 				cells: [new sap.m.Text({
-						text: "{AppId}"
+						text: "{EmployeeId}"
 					}), new sap.m.Text({
-						text: "{AppName}"
+						text: "{EmployeeName}"
 					}),
 					new sap.m.Text({
-						text: "{AppType}"
+						text: "{EmployeeEmail}"
 					}),
 						new sap.m.Text({
-						text: "{AppModule}"
+						text: "{EmployeePhoneNo}"
 					})
 				]
 			});
 
-			var sServiceUrl = "/sap/opu/odata/sap/ZFCAT_LOGS_SRV";
+			var sServiceUrl = "/sap/opu/odata/sap/ZODATA_EMP_SRV";
 
 			var oModel = new sap.ui.model.odata.ODataModel(sServiceUrl);
 
 			oTable.setModel(oModel);
 			oTable.bindAggregation("items", {
-				path: "/zfcat_logSet",
+				path: "/employee_odataSet",
 			 	template: oTemplate
 			 });
 		}

@@ -20,6 +20,13 @@
 				"settings": {
 					"localUri": "localService/metadata.xml"
 				}
+			},
+			"ZODATA_EMP_SRV": {
+				"uri": "/sap/opu/odata/sap/ZODATA_EMP_SRV/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZODATA_EMP_SRV/metadata.xml"
+				}
 			}
 		}
 	},
@@ -74,7 +81,7 @@
 					"defaultBindingMode": "OneWay",
 					"defaultCountMode": "Request"
 				},
-				"dataSource": "ZFCAT_LOGS_SRV",
+				"dataSource": "ZODATA_EMP_SRV",
 				"preload": true
 			}
 		},
