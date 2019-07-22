@@ -33,7 +33,7 @@
 					            </Column>
 					            <Column id="column3">
 					                <header>
-					                    <Text text="Employee Contact No." id="text3"/>
+					                    <Text text="Employee Contact No" id="text3"/>
 					                </header>
 					            </Column></columns></Table>
 					</content>
