@@ -6,7 +6,7 @@ parameters:
   hcp-deployer-version: '1.0.0'
 
 modules:
-  - name: ui5app5
+  - name: ui5app6
     type: html5
     path: .
     parameters:
