@@ -4,5 +4,6 @@ applications:
   path: com.sap.ui5.demo2.mtar
   memory: 1G
   instances: 1
-  buildpacks: staticfile_buildpack
+  buildpacks: 
+  - https://github.com/govau/cf-example-staticfile.git
   
