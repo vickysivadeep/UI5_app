@@ -5,5 +5,5 @@ applications:
   memory: 1G
   instances: 1
   buildpacks: 
-  - https://github.com/govau/cf-example-staticfile.git
+  - https://github.com/cloudfoundry/staticfile-buildpack.git
   
