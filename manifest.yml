@@ -1,0 +1,8 @@
+---
+applications:
+- name: ui5app8
+  path: ${WORKSPACE}/com.sap.ui5.demo2.mtar
+  memory: 1G
+  instances: 1
+  buildpacks:
+  - https://github.com/cloudfoundry/java-buildpack.git
