@@ -4,5 +4,5 @@ applications:
   path: com.sap.ui5.demo2.mtar
   memory: 1G
   instances: 1
-  buildpacks:
-  - staticfile-buildpack
+  buildpacks: staticfile_buildpack
+  
