@@ -1,0 +1,43 @@
+{
+  "routes": [
+	  {
+	    "source": "^/odata.svc/(.*)$",
+	    "destination": "tdash-odata-service",
+        "authenticationType": "xsuaa"
+	  },
+      {
+	    "source": "^/api/(.*)$",
+	    "destination": "tdash-service",
+        "authenticationType": "xsuaa"
+	  },
+      {
+	    "source": "^/swagger.*",
+	    "destination": "tdash-service-swagger",
+        "authenticationType": "xsuaa"
+	  },
+      {
+	    "source": "^/v2/.*",
+	    "destination": "tdash-service-swagger",
+        "authenticationType": "xsuaa"
+	  },
+      {
+	    "source": "^/webjars/.*",
+	    "destination": "tdash-service-swagger",
+        "authenticationType": "xsuaa"
+	  },
+      {
+	    "source": "^/logged-out.html$",
+	    "localDir": "resources",
+        "authenticationType": "none"
+	  },
+	  {
+	    "source": "^/(.*)$",
+	    "localDir": "resources",
+        "authenticationType": "xsuaa"
+	  }
+  ],
+  "logout": {
+     "logoutEndpoint": "/logout",
+     "logoutPage": "/logged-out.html"
+  }
+}
